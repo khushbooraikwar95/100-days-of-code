@@ -1,0 +1,47 @@
+<!-- JavaScript array is an object that represents a collection of similar type of elements.
+
+There are 3 ways to construct array in JavaScript
+
+By array literal
+By creating instance of Array directly (using new keyword)
+By using an Array constructor (using new keyword) -->
+
+
+<!-- The syntax of creating array using array literal  -->
+<script>
+ 
+ let fruits=[ "Apple",
+        " Banana",
+        " Orange",
+        " Mango "]
+
+        for(let i=0;i<fruits.length;i++){
+            document.write(fruits[i]+ "<br>");
+        }
+       
+ // The syntax of creating array directly 
+
+
+ let i;  
+let colors = new Array();  
+colors[0] = "RED";  
+colors[1] = "GREEN";  
+colors[2] = "BLUE";  
+  
+for (i=0;i<colors.length;i++){  
+document.write(colors[i] + "<br>");  
+}  
+
+// The example of creating object by array constructor
+
+let City = new Array("Banaglore", "Mumbai", "Delhi");
+
+for(i=0; i<City.length;i++){
+    document.write(City[i] + "<br>");  
+}
+
+// To print Date on the screen
+
+let date= new Date();
+document.write(date);
+</script>

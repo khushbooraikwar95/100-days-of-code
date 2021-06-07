@@ -1,0 +1,49 @@
+<!--  this is simple snippet to create object in JS and print the value on screen -->
+<!-- The syntax of creating object using object literals -->
+<!-- There are 3 ways to create objects.
+
+By object literal
+By creating instance of Object directly (using new keyword)
+By using an object constructor (using new keyword) -->
+
+<html>
+<body>
+<script>  
+emp={
+    id:13093696,
+    name:"Khushboo Raikwar",
+    salary:80000,
+    organization:"SAP"
+}  
+document.write(emp.name);  
+
+ 
+
+// <!-- The syntax of creating object directly -->
+
+
+var emp=new Object();  
+emp.id=101;  
+emp.name="Ravi Malik";  
+emp.salary=50000;  
+document.write(emp.id+" "+emp.name+" "+emp.salary);  
+
+
+
+// The example of creating object by object constructor :
+
+ 
+function employee(id,name,salary){  
+this.id=id;  
+this.name=name;  
+this.salary=salary;  
+}  
+let e=new employee(103,"Vimal Jaiswal",30000);  
+  
+document.write(e.id+" "+e.name+" "+e.salary);  
+
+
+
+</script>
+</body>
+</html>

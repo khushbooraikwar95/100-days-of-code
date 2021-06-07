@@ -1,0 +1,75 @@
+<!-- <script type="text/javascript">  
+    function totalelements()  
+    {  
+    var allgenders=document.getElementsByName("gender");  
+    alert("Total Genders:"+allgenders.length);  
+    }  
+    </script>  
+    <form>  
+    Male:<input type="radio" name="gender" value="male">  
+    Female:<input type="radio" name="gender" value="female">  
+    Transgender:<input type="radio" name="gender" value="female">  
+      
+    <input type="button" onclick="totalelements()" value="Total Genders">  
+    </form>   -->
+    <!-- <html>  
+        <head> Javascript Events</head>  
+        <body>  
+        <h2> Enter something here</h2>  
+        <input type="text" id="input1" onfocus="focusevent()"/>  
+        <script>  
+        
+            function focusevent()  
+            {  
+                document.getElementById("input1").style.background=" aqua";  
+            }  
+        //-->  
+        <!-- </script>  
+        </body>  
+        </html>   
+
+        <!DOCTYPE html>  
+<html>  
+<body>  
+<p> Example of the addEventListener() method. </p>  
+<p> Click the following button to see the effect. </p>  
+<button id = "btn"> Click me </button>  
+<p id = "para"></p>  
+<script>  
+document.getElementById("btn").addEventListener("click", fun);  
+function fun() {  
+document.getElementById("para").innerHTML = "Hello World" + "<br>" + "Welcome to the Khushboo world!";  
+}  
+</script>  
+</body>  
+</html>   -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = " utf-8">
+<title> window.onload() </title>
+<style type = "text/css">
+#bg{
+width: 200px;
+height: 200px;
+border: 4px solid blue;
+}
+</style>
+<script type = "text/javascript">
+window.onload = function(){
+document.getElementById("bg").style.backgroundColor = "red";
+document.getElementById("bg").style.width = "300px";
+document.getElementById("bg").style.height = "300px";
+}
+</script>
+</head>
+<body>
+<h2> This is an example of window.onload() </h2>
+<div id = "bg"></div>
+</body>
+</html>
+
+ 

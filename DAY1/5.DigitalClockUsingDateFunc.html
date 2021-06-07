@@ -1,0 +1,32 @@
+<!-- JavaScript Digital Clock Example
+Let's see the simple example to display digital clock using JavaScript date object. -->
+
+<!-- There are two ways to set interval in JavaScript: by setTimeout() or setInterval() method. -->
+
+<label>Current time ::</label>
+ <button id="txt1"></button>
+<script>
+window.onload=function(){getTime();}  
+function getTime(){
+
+    today= new Date();
+    let h= today.getHours();
+    let m= today.getMinutes();
+    let s= today.getSeconds();
+
+   // add a zero in front of numbers<10  
+m=checkTime(m);  
+s=checkTime(s);  
+document.getElementById('txt1').innerHTML=h+":"+m+":"+s;  
+setTimeout(function(){getTime()},1000);  
+}  
+//setInterval("getTime()",1000);//another way  
+function checkTime(i){  
+if (i<10){  
+  i="0" + i;  
+ }  
+return i;  
+}  
+
+
+</script>

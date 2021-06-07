@@ -1,0 +1,27 @@
+<!-- Defining method in JavaScript Object
+We can define method in JavaScript object. But before defining method, 
+we need to add property in the function with same name as method. -->
+<html>
+<body>
+<script>  
+function emp(id,name,salary){
+    this.id=id,
+    this.name = name
+    this.salary= salary
+
+    this.changeSalary=changeSalary; 
+
+function changeSalary(otherSalary){  
+this.salary=otherSalary;  
+}  
+}  
+e=new emp(103,"KhushbooRaikwar",50000);  
+document.write(e.id+" "+e.name+" "+e.salary);  
+
+e.changeSalary(1000);  
+
+document.write("<br>"+e.id+" "+e.name+" "+e.salary);  
+
+ </script>
+ </body>
+</html>
