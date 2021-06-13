@@ -1,0 +1,8 @@
+A JavaScript global variable is declared outside the function or
+ declared with window object. It can be accessed from any function.
+
+ To declare JavaScript global variables inside function, you need to use window object. 
+ For example:
+window.value=90
+
+
